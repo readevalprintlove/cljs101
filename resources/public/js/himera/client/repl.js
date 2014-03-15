@@ -1,5 +1,7 @@
 goog.provide('himera.client.repl');
 goog.require('cljs.core');
+goog.require('lessons.interop');
+goog.require('lessons.interop');
 goog.require('clojure.zip');
 goog.require('clojure.walk');
 goog.require('clojure.set');
