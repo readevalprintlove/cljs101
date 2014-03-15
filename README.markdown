@@ -1,8 +1,6 @@
-# himera
+# ClojureScript 101
 
-ClojureScript compiler as service with a simple in-browser REPL.
-
-[Try it on Heroku](http://himera.heroku.com)
+A living tutorial for ClojureScript.
 
 ## Build
 
@@ -11,11 +9,13 @@ ClojureScript compiler as service with a simple in-browser REPL.
 
 ## Usage
 
-To start Himera locally using [Leiningen](https://github.com/technomancy/leiningen), type the following from the project directory.
+To start CLojureScript 101 locally using [Leiningen](https://github.com/technomancy/leiningen), type the following from the project directory.
 
     lein run 8080
 
-Then visit <http://localhost:8080/> and never stop typing.  For example, common ClojureScript functions and macros work as expected:
+Then visit <http://localhost:8080/> and hack away.
+
+For example, common ClojureScript functions and macros work as expected:
 
 ```clojure
 
@@ -58,39 +58,9 @@ To use [jQuery](http://jquery.com) from the Himera REPL, try the following:
 	(.text anchor "Github repo...")
 ```
 
-To exercise the compilation service from the command line, try the following:
-
-```sh
-
-    $ curl -X POST -H "Content-Type: application/clojure" \
-	    -d '{:expr ((fn foo [x] (js/alert x)) 42)}' \
-		http://localhost:8080/compile
-	
-	#=> {:js "(function foo(x){\nreturn alert.call(null,x);\n}).call(null,42)"}
-```
-
-## Current limitations
-
-  * No way to override functions defined in `cljs.core`
-  * `defrecord` access is not working
-  * Creating namespaces does not work
-  * Other problems not yet discovered
-  * ClojureScript's `/` function is not munged properly
-
-## Plans
-
-  * Fix the limitations above
-  * Stateless service
-  * More clients
-  * Dynamic JS library loading
-  * Other plans not yet devised
-
-## Thanks
-
-Thanks to Tim McCormack, Paul Michael Bauer, and Anthony Grimes for the hard work in blazing the trail for online Clojure and ClojureScript REPLage and compilationation.  Also thanks to Craig Andera and Chris Redinger for moral support and letting me bounce insane ideas off of them.
-
 ## License
 
-Copyright (C) 2012, 2013 Fogus and Relevance, Inc.
+Copyright (C) 2014, Fogus
 
 Distributed under the Eclipse Public License, the same as Clojure.
+
