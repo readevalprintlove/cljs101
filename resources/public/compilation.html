@@ -35,7 +35,7 @@ remove this notice, or any other, from this software.
     <h3>Phases of compilation</h3>
 
     <div class="syn-section">
-        <h4>4 phases</h4>
+        <h4>4 phases (mostly)</h4>
         <div class="cheat-box-container eight columns">
             <div class="cheat-box">
                 <img src="http://farm6.staticflickr.com/5341/7110268565_de4998482b_n_d.jpg">
@@ -77,55 +77,63 @@ console.log("Hello, world!");
         </div>
     </div>
 
+    <h3>Reading: Strings in...</h3>
     <div class="syn-section">
-        <h4>Use a library</h4>
+        <h4>...data structures out</h4>
         <div class="cheat-box-container eight columns">
             <div class="cheat-box">
-                <pre class="brush: js">// No native implementation</pre>
-            </div>
-        </div>
-
-        <div class="cheat-box-container eight columns">
-            <div class="cheat-box">
-                            <pre class="brush: clojure">
-(ns my.library
-  (:require [other.library :as other]))</pre>
-            </div>
-        </div>
-    </div>
-
-    <h3>Variables</h3>
-    <div class="syn-section">
-        <h4>Top Level</h4>
-        <div class="cheat-box-container eight columns">
-            <div class="cheat-box">
-                <pre class="brush: js">var foo = "bar";</pre>
-            </div>
-        </div>
-
-        <div class="cheat-box-container eight columns">
-            <div class="cheat-box">
-                <pre class="brush: clojure">(def foo "bar")</pre>
-            </div>
-        </div>
-    </div>
-
-    <div class="syn-section">
-        <h4>Local Variables</h4>
-        <div class="cheat-box-container eight columns">
-            <div class="cheat-box">
-                <pre class="brush: js">
-function foo() {
-  var bar = 1;
-}</pre>
+	      <img src="http://farm9.staticflickr.com/8161/7110268635_6dc99f64af_m_d.jpg">
             </div>
         </div>
 
         <div class="cheat-box-container eight columns">
             <div class="cheat-box">
                 <pre class="brush: clojure">
-(defn foo []
-  (let [bar 1]))</pre>
+(read-string "(-&gt; 42 (- 6) Math/sqrt)")
+                  |
+               becomes
+                  |
+                  v
+		</pre>
+		<ul>
+		  <li>A List with:</li>
+		  <ul>
+		    <li>A Symbol <code>-&gt;</code></li>
+		    <li>A Number <code>42</code></li>
+		    <li>Another List with a Symbol and a Number<code>(- 6)</code></li>
+		    <li>Another Symbol <code>Math/sqrt</code></li>
+		  </ul>
+		</ul>
+            </div>
+        </div>
+    </div>
+
+    <h3>Macros: Data structures in...</h3>
+    <div class="syn-section">
+        <h4>...different data structures out</h4>
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+	      <img src="http://farm8.staticflickr.com/7094/6964196494_6480b368fc_m_d.jpg">
+            </div>
+        </div>
+
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+                <pre class="brush: clojure">
+(-&gt; 42 (- 6) Math/sqrt)
+            |
+         becomes
+            |
+            v
+(Math/sqrt (- 42 6))
+		</pre>
+		<ul>
+		  <li>A List with:</li>
+		  <ul>
+		    <li>A Symbol <code>Math/sqrt</code></li>
+		    <li>Another List with a Symbol and two Numbers <code>(- 42 6)</code></li>
+		  </ul>
+		</ul>
             </div>
         </div>
     </div>
