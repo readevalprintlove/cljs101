@@ -138,6 +138,40 @@ console.log("Hello, world!");
         </div>
     </div>
 
+    <h3>Analysis: Data structures in...</h3>
+    <div class="syn-section">
+        <h4>...a tree out</h4>
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+	      <img src="http://farm9.staticflickr.com/8161/7110268635_6dc99f64af_m_d.jpg">
+            </div>
+        </div>
+
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+                <pre class="brush: clojure">
+(read-string "(-&gt; 42 (- 6) Math/sqrt)")
+                  |
+               becomes
+                  |
+                  v
+		</pre>
+		<ul>
+		  <li>A List with:</li>
+		  <ul>
+		    <li>A Symbol <code>-&gt;</code></li>
+		    <li>A Number <code>42</code></li>
+		    <li>Another List with a Symbol and a Number<code>(- 6)</code></li>
+		    <li>Another Symbol <code>Math/sqrt</code></li>
+		  </ul>
+		</ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <div class="syn-section">
         <h4>Hoisting</h4>
         <div class="cheat-box-container eight columns">
