@@ -58,6 +58,27 @@ To use [jQuery](http://jquery.com) from the Himera REPL, try the following:
 	(.text anchor "Github repo...")
 ```
 
+## Ideas
+
+* ClojureScript 101
+    * Target audience: those who know about ClojureScript but have never used it
+    * Prerequisite: Clojure 101
+    * Google Clojure Compiler
+        * high level overview of compilation
+        * will be covered in more detail in ClojureScript 102
+    * Getting up and running
+        * required tools: lein, editor, Java, etc.
+        * lein cljs-build
+        * source maps
+    * What is different from Clojure?
+        * Briefly mention macros, more coverage in 102
+    * Namespaces and Libraries
+        * in ClojureScript only
+    * Basic JavaScript interop
+        * the js magic namespace
+        * interact with JavaScript environment
+        * using Google Clojure libraries
+
 ## License
 
 Copyright (C) 2014, Fogus
