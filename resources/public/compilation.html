@@ -54,18 +54,23 @@ remove this notice, or any other, from this software.
         </div>
     </div>
 
-    <h3>Code modularity</h3>
+    <h3>ClojureScript in...</h3>
     <div class="syn-section">
-        <h4>Define a library</h4>
+        <h4>...JavaScript out</h4>
         <div class="cheat-box-container eight columns">
             <div class="cheat-box">
-                <pre class="brush: js">// No native implementation</pre>
+                <img src="http://farm8.staticflickr.com/7112/7110268589_cd20258b6e_d.jpg" width="75%" height="75%">
             </div>
         </div>
 
         <div class="cheat-box-container eight columns">
             <div class="cheat-box">
-                <pre class="brush: clojure">(ns my.library)</pre>
+                <pre class="brush: clojure">
+(.log js/console "Hello, world!")
+|
+v
+console.log("Hello, world!");
+</pre>
             </div>
         </div>
     </div>
