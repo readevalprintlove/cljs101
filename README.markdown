@@ -56,6 +56,7 @@ Common ClojureScript functions and macros work as expected:
 	(classify-age {:age 36})
 	;=> :ancient
 ```
+### JavaScript interop
 
 To use [jQuery](http://jquery.com) from the ClojureScript 101 REPL, try the following:
 
