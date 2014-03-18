@@ -63,7 +63,7 @@ To use [jQuery](http://jquery.com) from the Himera REPL, try the following:
 * ClojureScript 101
     * Target audience: those who know about ClojureScript but have never used it
     * Prerequisite: Clojure 101
-    * Google Clojure Compiler
+    * Google Closure Compiler
         * high level overview of compilation
         * will be covered in more detail in ClojureScript 102
     * Getting up and running
@@ -77,7 +77,7 @@ To use [jQuery](http://jquery.com) from the Himera REPL, try the following:
     * Basic JavaScript interop
         * the js magic namespace
         * interact with JavaScript environment
-        * using Google Clojure libraries
+        * using Google Closure libraries
 
 ## License
 
