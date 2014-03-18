@@ -80,6 +80,7 @@ To use [jQuery](http://jquery.com) from the ClojureScript 101 REPL, try the foll
         * required tools: lein, editor, Java, etc.
         * `lein cljs-build`
         * TODO ource maps
+    * Just enough ClojureScript
     * What is different from Clojure?
 	    * Interop
 		* Compilation
