@@ -2,20 +2,31 @@
 
 A living tutorial for ClojureScript.
 
+## Prerequisites
+
+   * Java 1.6+
+   * Maven 2
+   * [Leiningen](http://leiningen.org/)
+   * Text editor
+
 ## Build
+
+To build the included source files, enter and run the following at a command prompt:
 
     lein deps
 	lein cljsbuild once
 
 ## Usage
 
-To start CLojureScript 101 locally using [Leiningen](https://github.com/technomancy/leiningen), type the following from the project directory.
+To start CLojureScript 101 locally using [Leiningen](https://github.com/technomancy/leiningen), type the following command in the project directory:
 
     lein run 8080
 
 Then visit <http://localhost:8080/> and hack away.
 
-For example, common ClojureScript functions and macros work as expected:
+## Examples
+
+Common ClojureScript functions and macros work as expected:
 
 ```clojure
 
@@ -46,7 +57,7 @@ For example, common ClojureScript functions and macros work as expected:
 	;=> :ancient
 ```
 
-To use [jQuery](http://jquery.com) from the Himera REPL, try the following:
+To use [jQuery](http://jquery.com) from the ClojureScript 101 REPL, try the following:
 
 ```clojure
 
@@ -65,20 +76,23 @@ To use [jQuery](http://jquery.com) from the Himera REPL, try the following:
     * Prerequisite: Clojure 101
     * Getting up and running
         * required tools: lein, editor, Java, etc.
-        * lein cljs-build
-        * source maps
+        * `lein cljs-build`
+        * TODO ource maps
     * What is different from Clojure?
+	    * Interop
+		* Compilation
         * Briefly mention macros, more coverage in 102
-    * Google Closure Compiler
-        * high level overview of compilation
-        * will be covered in more detail in ClojureScript 102
+    * Compilation
+        * High level overview of compilation
+		* Google Closure Compiler
+        * Will be covered in more detail in ClojureScript 102
     * Namespaces and Libraries
-        * in ClojureScript only
-		* L@@k https://github.com/swannodette/lt-cljs-tutorial/blob/master/lt-cljs-tutorial.cljs
+        * In ClojureScript only
+		* TODO L@@k https://github.com/swannodette/lt-cljs-tutorial/blob/master/lt-cljs-tutorial.cljs
     * Basic JavaScript interop
-        * the js magic namespace
-        * interact with JavaScript environment
-        * using Google Closure libraries
+        * The `js` magic namespace
+        * Interact with JavaScript environment
+        * Using Google Closure libraries
 
 ## License
 
