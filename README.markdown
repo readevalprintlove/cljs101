@@ -74,6 +74,7 @@ To use [jQuery](http://jquery.com) from the Himera REPL, try the following:
         * Briefly mention macros, more coverage in 102
     * Namespaces and Libraries
         * in ClojureScript only
+		* L@@k https://github.com/swannodette/lt-cljs-tutorial/blob/master/lt-cljs-tutorial.cljs
     * Basic JavaScript interop
         * the js magic namespace
         * interact with JavaScript environment
