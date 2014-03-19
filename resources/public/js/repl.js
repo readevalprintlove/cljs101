@@ -13656,9 +13656,9 @@ cljs.core.special_symbol_QMARK_ = function(a) {
   new cljs.core.Symbol(null, "recur", "recur", -1532142362, null), null, new cljs.core.Symbol(null, ".", ".", -1640531481, null), null, new cljs.core.Symbol(null, "ns", "ns", -1640528002, null), null, new cljs.core.Symbol(null, "do", "do", -1640528316, null), null, new cljs.core.Symbol(null, "fn*", "fn*", -1640430053, null), null, new cljs.core.Symbol(null, "throw", "throw", -1530191713, null), null, new cljs.core.Symbol(null, "letfn*", "letfn*", 1548249632, null), null, new cljs.core.Symbol(null, 
   "js*", "js*", -1640426054, null), null, new cljs.core.Symbol(null, "defrecord*", "defrecord*", 774272013, null), null, new cljs.core.Symbol(null, "let*", "let*", -1637213400, null), null, new cljs.core.Symbol(null, "loop*", "loop*", -1537374273, null), null, new cljs.core.Symbol(null, "if", "if", -1640528170, null), null, new cljs.core.Symbol(null, "def", "def", -1640432194, null), null], !0), a)
 };
-var lessons = {interop:{}};
-lessons.interop.hi = function(a) {
-  return alert([cljs.core.str("Hi "), cljs.core.str(a), cljs.core.str("!")].join(""))
+var lessons = {namespaces:{}};
+lessons.namespaces.hello = function() {
+  return alert("Hi!")
 };
 goog.events = {};
 goog.events.EventWrapper = function() {
@@ -17818,6 +17818,10 @@ domina.xpath.xpath = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a
 }();
+lessons.interop = {};
+lessons.interop.hi = function(a) {
+  return alert([cljs.core.str("Hi "), cljs.core.str(a), cljs.core.str("!")].join(""))
+};
 clojure.zip = {};
 clojure.zip.zipper = function(a, b, c, d) {
   return cljs.core.with_meta(cljs.core.PersistentVector.fromArray([d, null], !0), cljs.core.PersistentArrayMap.fromArray(["\ufdd0:zip/make-node", c, "\ufdd0:zip/children", b, "\ufdd0:zip/branch?", a], !0))
@@ -19180,5 +19184,3 @@ himera.format.core.set_toggle_on_click_BANG_ = function(a, b) {
     }
   })
 };
-
-//@ sourceMappingURL=resources/public/js/repl.js.map.merged

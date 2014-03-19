@@ -23,7 +23,8 @@
                  :output-dir "resources/public/js/",
                  :output-to "resources/public/js/repl.js",
                  :optimizations :simple
-                 :source-map "resources/public/js/repl.js.map"},
+                 ;;:source-map "resources/public/js/repl.js.map"
+                 },
                 :jar true}]}  
   :source-paths ["src/clj"]
   :main himera.server.app
