@@ -9,10 +9,11 @@
 ;; alias.
 
 (defn hello [the-name]
-  (js/alert (clojure.string/join " "
-                                 ["Hello"
-                                  (string/upper-case the-name)
-                                  ":-)"])))
+  (js/alert (clojure.string/join             ;; Fully qualified (i.e. annoying)
+             " "                           
+             ["Hello"
+              (string/upper-case the-name)   ;; Alias!
+              ":-)"])))
 
 ;; Once you have a namespace, you can start creating things in
 ;; that namespace.
