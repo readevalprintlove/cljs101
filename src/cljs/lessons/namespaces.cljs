@@ -8,5 +8,8 @@
 ;; the current one. Here we are requiring `clojure.string` and giving it an
 ;; alias.
 
-(defn hello []
-  (js/alert "Hi!"))
+(defn hello [the-name]
+  (js/alert (clojure.string/join " "
+                                 ["Hello"
+                                  (string/upper-case name)
+                                  "!"])))
