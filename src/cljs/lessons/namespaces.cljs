@@ -11,5 +11,5 @@
 (defn hello [the-name]
   (js/alert (clojure.string/join " "
                                  ["Hello"
-                                  (string/upper-case name)
-                                  "!"])))
+                                  (string/upper-case the-name)
+                                  ":-)"])))
