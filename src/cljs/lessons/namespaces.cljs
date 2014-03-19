@@ -13,3 +13,13 @@
                                  ["Hello"
                                   (string/upper-case the-name)
                                   ":-)"])))
+
+;; Once you have a namespace, you can start creating things in
+;; that namespace.
+
+;; You can run `lein cljsbuild once` at the command line and
+;; then run `lein run 8080` and inspect the JS console to
+;; view this namespace and its things contained in the
+;; `lessons.namespaces` object.
+
+
