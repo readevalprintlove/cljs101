@@ -74,28 +74,32 @@ To use [jQuery](http://jquery.com) from the ClojureScript 101 REPL, try the foll
 ## Topics
 
 * ClojureScript 101
-    * Target audience: those who know about ClojureScript but have never used it
-    * Prerequisite: Clojure 101
+    - Target audience: those who know about ClojureScript but have never used it
+    - Prerequisite: Clojure 101
+    * Why ClojureScript?
     * Getting up and running
         * required tools: lein, editor, Java, etc.
-        * `lein cljs-build`
-        * TODO source maps
+        * `lein cljs-build ...`
     * Just enough ClojureScript
     * What is different from Clojure?
+    	* Compilation
+		* Namespaces
 	    * Interop
-		* Compilation
+		* Libraries
         * Briefly mention macros, more coverage in 102
     * Compilation
         * High level overview of compilation
 		* Google Closure Compiler
         * Will be covered in more detail in ClojureScript 102
-    * Namespaces and Libraries
+    * Namespaces
         * In ClojureScript only
 		* TODO L@@k https://github.com/swannodette/lt-cljs-tutorial/blob/master/lt-cljs-tutorial.cljs
     * Basic JavaScript interop
         * The `js` magic namespace
         * Interact with JavaScript environment
+	*  Libraries
         * Using Google Closure libraries
+		* Using jQuery
 
 ## License
 
