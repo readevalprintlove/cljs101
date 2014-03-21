@@ -36,20 +36,4 @@
 (defn also-push-thing [array thing]
   (. array (push thing)))
 
-;; Primitive Array Operations
-;; ----------------------------------------------------------------------------
-
-;; When writing performance sensitive code, sometimes dealing with mutable
-;; arrays is unavoidable. ClojureScript provides a variety of functions for
-;; creating and manipulating JavaScript arrays.
-
-;; You can make an array of specific size with `make-array`
-
-;; (make-array 32)
-
-
-;; You can access an element of an array with `aget`.
-
-;; You can set the contents of an array with aset.
-
-
+;; Most of the rest is the same as Clojure
