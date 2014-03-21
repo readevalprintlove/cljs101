@@ -76,10 +76,10 @@ To use [jQuery](http://jquery.com) from the ClojureScript 101 REPL, try the foll
 * ClojureScript 101
     - Target audience: those who know about ClojureScript but have never used it
     - Prerequisite: Clojure 101
-    * Why ClojureScript?
     * Getting up and running
         * required tools: lein, editor, Java, etc.
         * `lein cljs-build ...`
+    * Why ClojureScript?
     * Just enough ClojureScript
     * What is different from Clojure?
     	* Compilation
