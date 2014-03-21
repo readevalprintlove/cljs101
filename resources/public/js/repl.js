@@ -13787,6 +13787,9 @@ goog.events.EventWrapper.prototype.listen = function(a, b, c, d, e) {
 goog.events.EventWrapper.prototype.unlisten = function(a, b, c, d, e) {
 };
 lessons.libs = {};
+lessons.libs.digitesque_QMARK_ = function(a) {
+  return goog.string.isNumeric(a)
+};
 lessons.libs.jq = jQuery;
 lessons.libs.get_text = function(a) {
   return a.text()
