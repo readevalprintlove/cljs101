@@ -23,26 +23,18 @@
 (defn get-length [array]
   (.-length array))
 
-
-
-
-
-
 ;; Method Calls
 ;; ----------------------------------------------------------------------------
 
 ;; Methods can be invoked with the `.` syntax.
 
-;; (.getSeconds a-date)
+(defn push-thing [array thing]
+  (.push array thing))
 
 ;; The above desugars into the following.
 
-;; (. a-date (getSeconds))
-
-;; For example, you can write a `console.log` call like so.
-
-;; (. js/console (log "Interop!"))
-
+(defn also-push-thing [array thing]
+  (. array (push thing)))
 
 ;; Primitive Array Operations
 ;; ----------------------------------------------------------------------------
