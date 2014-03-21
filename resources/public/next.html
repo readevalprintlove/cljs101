@@ -1,0 +1,63 @@
+<!--
+Copyright (c) 2014 Fogus. All rights reserved.  The
+use and distribution terms for this software are covered by the Eclipse
+Public License 1.0 (http://opensource.org/licenses/eclipse-1.0.php)
+which can be found in the file COPYING the root of this
+distribution.  By using this software in any fashion, you are
+agreeing to be bound by the terms of this license.  You must not
+remove this notice, or any other, from this software.
+-->
+
+<html>
+<head>
+  <script type="text/javascript" src="vendor/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="vendor/jquery.console.js"></script>
+  <script type="text/javascript" src="js/repl.js"></script>
+  <script type="text/javascript">
+    goog.require('himera.client.repl');
+  </script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/layout.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/skeleton.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/himera.css" />
+  <title>ClojureScript 101: What's next?</title>
+</head>
+<body>
+
+  <div class="container">
+    
+    <h1 id="title">ClojureScript 101</h1>
+    
+    <h2>What's next?</h2>
+
+    <div class="console" id="console"></div>
+   
+    <div class="rule sixteen columns"></div>
+
+    <ul>
+      <li><a href="https://github.com/magomimmo/modern-cljs">Modern ClojureScript: a tutorial series</a></li>
+      <li><a href="https://github.com/magomimmo/modern-cljs">Modern ClojureScript: a tutorial series</a></li>
+    </ul>
+        
+    <div class="rule sixteen columns"></div>
+    
+    <div class="column footer-logo">Himera &copy; 2012, 2013 Fogus and Relevance Inc.</div>
+    
+    <ul class="footer-links">
+      <li><a href="http://clojure.org/">Clojure.org</a></li>
+      <li><a href="https://github.com/clojure/clojurescript">ClojureScript</a></li>
+      <li><a href="http://clojuredocs.org/">Clojure Docs</a></li>
+      <li><a href="http://blog.fogus.me">Fogus</a></li>
+      <li><a href="http://www.joyofclojure.com">Joy of Clojure</a></li>
+    </ul>
+
+  </div><!-- / container -->
+
+<script>
+  himera.client.repl.go();
+  goog.require('cljs.core');
+  goog.provide('cljs.user');
+</script>
+
+</body>
+</html>
