@@ -18,7 +18,7 @@ To build the included source files, enter and run the following at a command pro
 
 ## Usage
 
-To start CLojureScript 101 locally using [Leiningen](https://github.com/technomancy/leiningen), type the following command in the project directory:
+To start ClojureScript 101 locally using [Leiningen](https://github.com/technomancy/leiningen), type the following command in the project directory:
 
     lein run 8080
 
