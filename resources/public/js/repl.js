@@ -18274,6 +18274,12 @@ lessons.interop.empty_array = [];
 lessons.interop.get_length = function(a) {
   return a.length
 };
+lessons.interop.push_thing = function(a, b) {
+  return a.push(b)
+};
+lessons.interop.also_push_thing = function(a, b) {
+  return a.push(b)
+};
 clojure.zip = {};
 clojure.zip.zipper = function(a, b, c, d) {
   return cljs.core.with_meta(cljs.core.PersistentVector.fromArray([d, null], !0), cljs.core.PersistentArrayMap.fromArray(["\ufdd0:zip/make-node", c, "\ufdd0:zip/children", b, "\ufdd0:zip/branch?", a], !0))
