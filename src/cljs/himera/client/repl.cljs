@@ -12,7 +12,7 @@
             [clojure.set :as set]
             [clojure.walk :as walk]
             [clojure.zip :as zip])
-  (:use [lessons.interop :only (hi)]))
+  (:use [lessons.interop :only (hi right-now get-seconds)]))
 
 (defn- map->js [m]
   (let [out (js-obj)]

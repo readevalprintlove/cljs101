@@ -5,6 +5,13 @@
 (defn hi [name]
   (js/alert (str "Hi " name "!")))
 
+
+(def empty-array (js/Array.))
+
+
+
+
+
 ;; JavaScript Interop
 ;; ============================================================================
 
@@ -13,10 +20,9 @@
 
 ;; You can access properties with the `.-` property access syntax.
 
-(defn get-seconds [date]
-  (.-getSeconds a-date))
+(defn get-length [array]
+  (.-length array))
 
-(def a-date (js/Date.))
 
 
 
@@ -27,15 +33,15 @@
 
 ;; Methods can be invoked with the `.` syntax.
 
-(.getSeconds a-date)
+;; (.getSeconds a-date)
 
 ;; The above desugars into the following.
 
-(. a-date (getSeconds))
+;; (. a-date (getSeconds))
 
 ;; For example, you can write a `console.log` call like so.
 
-(. js/console (log "Interop!"))
+;; (. js/console (log "Interop!"))
 
 
 ;; Primitive Array Operations
@@ -47,20 +53,11 @@
 
 ;; You can make an array of specific size with `make-array`
 
-(make-array 32)
+;; (make-array 32)
+
 
 ;; You can access an element of an array with `aget`.
 
-(aget #js ["one" "two" "three"] 1)
-
-;; You can access nested arrays with `aget`.
-
-(aget #js [#js ["one" "two" "three"]] 0 1)
-
 ;; You can set the contents of an array with aset.
 
-(def yucky-stuff #js [1 2 3])
 
-(aset yucky-stuff 1 4)
-
-yucky-stuff

@@ -13777,7 +13777,7 @@ clojure.string.escape = function(a, b) {
 };
 var lessons = {namespaces:{}};
 lessons.namespaces.hello = function(a) {
-  return alert(clojure.string.join.call(null, " ", cljs.core.PersistentVector.fromArray(["Hello", clojure.string.upper_case.call(null, a), "!"], !0)))
+  return alert(clojure.string.join.call(null, " ", cljs.core.PersistentVector.fromArray(["Hello", clojure.string.upper_case.call(null, a), ":-)"], !0)))
 };
 goog.events = {};
 goog.events.EventWrapper = function() {
@@ -18269,6 +18269,10 @@ domina.xpath.xpath = function() {
 lessons.interop = {};
 lessons.interop.hi = function(a) {
   return alert([cljs.core.str("Hi "), cljs.core.str(a), cljs.core.str("!")].join(""))
+};
+lessons.interop.empty_array = [];
+lessons.interop.get_length = function(a) {
+  return a.length
 };
 clojure.zip = {};
 clojure.zip.zipper = function(a, b, c, d) {
