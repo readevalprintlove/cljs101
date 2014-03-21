@@ -1,0 +1,218 @@
+<!--
+Copyright (c) 2014 Fogus. All rights reserved.  The
+use and distribution terms for this software are covered by the Eclipse
+Public License 1.0 (http://opensource.org/licenses/eclipse-1.0.php)
+which can be found in the file COPYING the root of this
+distribution.  By using this software in any fashion, you are
+agreeing to be bound by the terms of this license.  You must not
+remove this notice, or any other, from this software.
+-->
+
+<html>
+<head>
+  <script type="text/javascript" src="javascript/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="javascript/jquery.console.js"></script>
+  <script type="text/javascript" src="vendor/xregexp-min.js"></script>
+  <script type="text/javascript" src="vendor/shCore.js"></script>
+  <script type="text/javascript" src="vendor/shBrushClojure.js"></script>
+  <script type="text/javascript" src="vendor/shBrushJScript.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/layout.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/skeleton.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/himera.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/shCore.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/shThemeMarginalia.css" />
+  <title>ClojureScript 101: Why ClojureScript?</title>
+</head>
+<body>
+
+  <div id="himera-synonym" class="container">
+
+    <h1 id="title"><a href="/">ClojureScript 101</a> <div>Why?</div></h1>
+
+    <div class="rule sixteen columns"></div>
+
+    <h3>JavaScript</h3>
+
+    <div class="syn-section">
+        <h4>the current state of affairs</h4>
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+
+            </div>
+        </div>
+
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+                <ol>
+		  <li>Read</li>
+		  <li>Expand</li>
+		  <li>Analysis</li>
+		  <li>Emit</li>
+		</ol>
+            </div>
+        </div>
+    </div>
+
+    <h3>ClojureScript in...</h3>
+    <div class="syn-section">
+        <h4>...JavaScript out</h4>
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+                <img src="http://farm8.staticflickr.com/7112/7110268589_cd20258b6e_d.jpg" width="90%">
+            </div>
+        </div>
+
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+                <pre class="brush: clojure">
+(.log js/console "Hello, world!")
+               |
+            becomes
+               |
+               v
+console.log("Hello, world!");
+</pre>
+            </div>
+        </div>
+    </div>
+
+    <h3>Reading: Strings in...</h3>
+    <div class="syn-section">
+        <h4>...data structures out</h4>
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+	      <img src="http://farm9.staticflickr.com/8161/7110268635_6dc99f64af_m_d.jpg">
+            </div>
+        </div>
+
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+                <pre class="brush: clojure">
+(read-string "(-&gt; 42 (- 6) Math/sqrt)")
+                  |
+               becomes
+                  |
+                  v
+		</pre>
+		<ul>
+		  <li>A List with:</li>
+		  <ul>
+		    <li>A Symbol <code>-&gt;</code></li>
+		    <li>A Number <code>42</code></li>
+		    <li>Another List with a Symbol and a Number<code>(- 6)</code></li>
+		    <li>Another Symbol <code>Math/sqrt</code></li>
+		  </ul>
+		</ul>
+            </div>
+        </div>
+    </div>
+
+    <h3>Macros: Data structures in...</h3>
+    <div class="syn-section">
+        <h4>...different data structures out</h4>
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+	      <img src="http://farm8.staticflickr.com/7094/6964196494_6480b368fc_m_d.jpg">
+            </div>
+        </div>
+
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+                <pre class="brush: clojure">
+(-&gt; 42 (- 6) Math/sqrt)
+            |
+         becomes
+            |
+            v
+(Math/sqrt (- 42 6))
+		</pre>
+		<ul>
+		  <li>A List with:</li>
+		  <ul>
+		    <li>A Symbol <code>Math/sqrt</code></li>
+		    <li>Another List with a Symbol and two Numbers <code>(- 42 6)</code></li>
+		  </ul>
+		</ul>
+            </div>
+        </div>
+    </div>
+
+    <h3>Analysis: Data structures in...</h3>
+    <div class="syn-section">
+        <h4>...a tree out</h4>
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+	      <img src="http://farm8.staticflickr.com/7252/6964196568_4a44028a2f_m_d.jpg">
+            </div>
+        </div>
+
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+                <pre class="brush: clojure">
+(Math/sqrt (- 42 6))
+          |
+       becomes
+          |
+          v
+		</pre>
+<img src="http://farm6.staticflickr.com/5458/6965437392_e3f451c048_d.jpg" height="60%">
+            </div>
+        </div>
+    </div>
+
+    <h3>Emit: Trees in...</h3>
+    <div class="syn-section">
+        <h4>...JavaScript out</h4>
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+	      <img src="http://farm9.staticflickr.com/8010/6964196594_34112d25b1_m_d.jpg">
+            </div>
+        </div>
+
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+              <pre class="brush: js">
+Math.sqrt((42 - 6));
+	      </pre>
+            </div>
+        </div>
+    </div>
+
+    <h3>Advanced compilation: JavaScript in...</h3>
+    <div class="syn-section">
+        <h4>...JavaScript out?!</h4>
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+	      <img src="http://rhysbrettbowen.github.io/how_google_does_it/closure.png" width="60%">
+            </div>
+        </div>
+
+        <div class="cheat-box-container eight columns">
+            <div class="cheat-box">
+	      <a href="http://closure-compiler.appspot.com/home">Google Closure Compiler</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="rule sixteen columns"></div>
+
+    <div class="column footer-logo">Himera &copy; 2012, 2013 Fogus and Relevance Inc.</div>
+
+    <ul class="footer-links">
+      <li><a href="http://clojure.org/">Clojure.org</a></li>
+      <li><a href="https://github.com/clojure/clojurescript">ClojureScript</a></li>
+      <li><a href="http://clojuredocs.org/">Clojure Docs</a></li>
+      <li><a href="http://blog.fogus.me">Fogus</a></li>
+      <li><a href="http://joyofclojure.com">Joy of Clojure</a></li>
+    </ul>
+
+  </div><!-- / container -->
+
+<script type="text/javascript">
+SyntaxHighlighter.defaults["gutter"] = false;
+SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>
