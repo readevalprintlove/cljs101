@@ -16,15 +16,15 @@
 ;; ============================================================================
 
 ;; Property Access
-;; ----------------------------------------------------------------------------
+
 
 ;; You can access properties with the `.-` property access syntax.
 
 (defn get-length [array]
   (.-length array))
 
+
 ;; Method Calls
-;; ----------------------------------------------------------------------------
 
 ;; Methods can be invoked with the `.` syntax.
 
