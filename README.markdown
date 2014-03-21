@@ -92,7 +92,7 @@ To use [jQuery](http://jquery.com) from the ClojureScript 101 REPL, try the foll
 		* Google Closure Compiler
         * Will be covered in more detail in ClojureScript 102
     * Namespaces
-        * In ClojureScript only
+        * From a ClojureScript perspective
     * Basic JavaScript interop
         * The `js` magic namespace
         * Interact with JavaScript environment
